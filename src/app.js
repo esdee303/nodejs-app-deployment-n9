@@ -23,21 +23,21 @@ app.use(express.static(publicDir))
 
 app.get('', (req, res) => {
     res.render('index', {
-        mainBody: 'Weather',
+        mainTitle: 'Weather',
         name: 'SDF'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        mainBody: 'About',
+        mainTitle: 'About',
         name: 'SDF'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        mainBody: 'Help',
+        mainTitle: 'Help',
         name: 'SDF'
     })
 })
